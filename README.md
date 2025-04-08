@@ -13,24 +13,9 @@ Este projeto é um **sistema simples** de gerenciamento de contatos em **C#**, s
 
 ---
 
-
-
-## 📂 Estrutura do Código  
-
-```
-📦 GerenciadorContatos
-┣ 📜 Program.cs         # Ponto de entrada do sistema
-┣ 📜 IContatoService.cs # Interface para gerenciamento de contatos
-┣ 📜 Contato.cs         # Modelo de dados (contato)
-┣ 📜 ContatoService.cs  # Lógica de negócio
-┣ 📜 ConsoleUI.cs       # Interface de usuário (menu)
-```
-
----
-
 ## 🛠 Aplicação dos Princípios **SOLID**  
 
-### **✔️ S – Princípio da Responsabilidade Única (SRP)**  
+### **✔ S – Princípio da Responsabilidade Única (SRP)**  
 Cada classe tem **uma única responsabilidade**, facilitando manutenção e extensibilidade.  
 📌 **Exemplo no código:**  
 
@@ -73,7 +58,6 @@ public class ContatoServiceBanco : IContatoService
 {  
     public void AdicionarContato(string nome, string telefone, string email)  
     {  
-        // Implementação usando banco de dados  
     }  
 }
 ```
